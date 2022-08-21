@@ -13,6 +13,7 @@ const port = process.env.PORT || 3000
 app.use(express.json())
 
 app.use('/courses', require('./api/courses'))
+app.use('/registration', require('./api/registration'))
 
 app.get('/', (req, res)=>{
     res.send('Welcome to Node JS')
